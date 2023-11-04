@@ -35,7 +35,7 @@ async def show_credits(message: Message):
     msg = message.text.lower()
     if msg == 'credits':
         await message.answer('Credits: By Imm0rta11 Github', reply_markup=keyboard.cred_kb)
-    else:
+    elif msg == 'find out the weather':
         await message.answer('To find out what the weather is, you need to enter the command, here is the format of its writing /W location name')
 
 async def main():
